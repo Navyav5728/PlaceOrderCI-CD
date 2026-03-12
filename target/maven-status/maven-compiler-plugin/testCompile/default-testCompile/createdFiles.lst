@@ -1,0 +1,9 @@
+standalone/TestComponents/BaseTest.class
+standalone/data/dataReader.class
+standalone/TestComponents/Listeners.class
+standalone/data/dataReader$1.class
+standalone/tests/submitorderTest.class
+standalone/TestComponents/Retry.class
+standalone/tests/StandAloneTest.class
+standalone/TestComponents/BaseTest$1.class
+standalone/tests/ErrorValidationsTest.class

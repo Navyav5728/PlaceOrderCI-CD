@@ -1,0 +1,8 @@
+EcommFinal/PlaceOrder/pageobjects/CheckoutPage.class
+EcommFinal/PlaceOrder/pageobjects/OrderHistoryPage.class
+EcommFinal/PlaceOrder/pageobjects/OrderConfirmationPage.class
+EcommFinal/PlaceOrder/AbstractComponents/AbstractComponents.class
+EcommFinal/PlaceOrder/resources/ExtentReporterNG.class
+EcommFinal/PlaceOrder/pageobjects/ProductCatalog.class
+EcommFinal/PlaceOrder/pageobjects/LandingPage.class
+EcommFinal/PlaceOrder/pageobjects/CartPage.class
