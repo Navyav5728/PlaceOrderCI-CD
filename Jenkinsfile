@@ -2,7 +2,7 @@ pipeline{
 	//pipeline is the outer block of a Jenkins Declarative Pipeline. Jenkins says all valid Declarative Pipelines must be inside a pipeline block.
 	agent any//I used agent any so Jenkins can pick any available executor to run my automation suite.
 	tools {
-        jdk 'JDK17'
+        jdk 'JAVA21'
         maven 'Maven3'
     }
     parameters {
