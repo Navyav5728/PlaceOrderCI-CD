@@ -43,8 +43,9 @@ public class BaseTest {
 		if(browserName.contains("headless")) {
 		options.addArguments("headless");
 		}
-		driver.manage().window().setSize(new Dimension(1440,900));//help you to run in full screen
 		driver=new ChromeDriver(options);
+		driver.manage().window().setSize(new Dimension(1440,900));//help you to run in full screen
+		
 		}
 		else if(browserName.contains("firefox")) {
 			driver= new FirefoxDriver();

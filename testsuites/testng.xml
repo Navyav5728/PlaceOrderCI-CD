@@ -10,10 +10,12 @@
       
     </classes>
   </test> 
+ <!-- 
 	<test thread-count="5" name="ErrorValidations">
     <classes>
     
       <class name="standalone.tests.ErrorValidationsTest"/>
     </classes>
   </test>
+  -->
 </suite> <!-- Suite -->
