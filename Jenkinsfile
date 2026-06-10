@@ -39,11 +39,14 @@ triggers {
 
         stage('Run Automation Tests') {
             steps {
+				echo "Selected ENV: ${params.ENV}"
+        echo "Selected SUITE: ${params.SUITE}"
+        echo "Selected BROWSER: ${params.BROWSER}"
                 sh '''
                     mvn clean test \
-                    -DsuiteXmlFile=testsuites/${SUITE}.xml \
-                    -Dbrowser=${BROWSER} \
-                    -Denv=${ENV}
+                    -DsuiteXmlFile=testsuites/${params.SUITE}.xml \
+                    -Dbrowser=${params.BROWSER} \
+                    -Denv=${params.ENV}
                 '''
             }
         }
