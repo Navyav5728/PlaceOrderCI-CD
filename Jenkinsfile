@@ -38,18 +38,14 @@ triggers {
         }
 
         stage('Run Automation Tests') {
-            steps {
-				echo "Selected ENV: ${params.ENV}"
+    steps {
+        echo "Selected ENV: ${params.ENV}"
         echo "Selected SUITE: ${params.SUITE}"
         echo "Selected BROWSER: ${params.BROWSER}"
-                sh '''
-                    mvn clean test \
-                    -DsuiteXmlFile=testsuites/${params.SUITE}.xml \
-                    -Dbrowser=${params.BROWSER} \
-                    -Denv=${params.ENV}
-                '''
-            }
-        }
+
+        sh "mvn clean test -DsuiteXmlFile=testsuites/${params.SUITE}.xml -Dbrowser=${params.BROWSER} -Denv=${params.ENV}"
+    }
+}
 
         stage('Publish Test Results') {
             steps {
