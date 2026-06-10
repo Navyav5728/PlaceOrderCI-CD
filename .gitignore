@@ -1,0 +1,20 @@
+# Maven build output
+target/
+
+# TestNG / Selenium generated reports
+test-output/
+reports/
+screenshots/
+logs/
+
+# Mac system files
+.DS_Store
+
+# Eclipse files
+.settings/
+.classpath
+.project
+
+# Logs/temp files
+*.log
+*.tmp
